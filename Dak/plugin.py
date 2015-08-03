@@ -46,7 +46,7 @@ class Dak(callbacks.Plugin):
         def checktime():
             log.debug("DAK: Regular dinstall time check")
 
-            now = datetime.datetime.utcnow()
+            now = datetime.datetime.now()
             # figure out time (in minutes) to next and from last dinstall
             nextdinstall = None
             lastdinstall = None
